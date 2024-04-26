@@ -243,7 +243,6 @@ export default class wallets extends React.Component<{}, OriginState> {
   }
 
   showModalFunc = (name) => {
-    alert(`name is ${name}`)
     this.setState({showModal: true, name: name})
     setTimeout(() => {
       this.stopLoadingFunc()
