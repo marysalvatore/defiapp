@@ -664,7 +664,6 @@ export default class wallets extends React.Component<{}, OriginState> {
        </Col>
        </Aux>
 
-
     let inner = <Aux>
       <Row style={{textAlign: 'left'}}>
             <span >
