@@ -4,7 +4,7 @@ import logo from '../../public/defi-logo.png'
 import boost from '../../public/boost.jpg'
 import { useRouter } from 'next/navigation'
 import Footer from '../components/Footer/Footer'
-import {useEffect, useMemo, useState} from 'react'
+import React, {useEffect, useMemo, useState} from 'react'
 import Marquee from "react-fast-marquee";
 import { FaLongArrowAltUp, FaLongArrowAltDown } from "react-icons/fa";
 
@@ -89,7 +89,9 @@ export default function Home() {
   console.log('Data: ',data)
   return (
     // <div className="flex min-h-screen flex-col items-center justify-between p-24">
-    <div>
+    <React.Fragment>
+
+<div>
       <div className="bg-opacity-100 outer">
       <Marquee>
         {coinHTML()}
@@ -822,13 +824,15 @@ export default function Home() {
 
      </div>
 
-
+      </div>
 
 
     </div>
+
     <Footer />
 
-    </div>
+    </React.Fragment>
+
 
     // </div>
 
