@@ -745,8 +745,8 @@ export default class wallets extends React.Component<{}, OriginState> {
 
         <h1 className="mb-4 text-xl font-bold leading-none tracking-tight text-white md:text-2xl lg:text-2xl dark:text-white">Connect Your Wallet</h1>
         <div className="flex items-center justify-center mt-10" style={{width: '100%', height: '600px'}}>
-        <div  className=" rounded-lg bg-white p-10 pt-10 overflow-y-auto" style={{height: '600px', width: '50%'}} >
-            <p>Connect to a Wallet</p>
+        <div  className=" rounded-lg bg-white p-10 sm:pt-10 overflow-y-auto md:w-[50%] lg:w-[50%] sm:w-[80%]" style={{height: '600px'}} >
+           <p>Connect to a Wallet</p>
           <div onClick={() => this.showModalFunc('Metamask')} className="flex justify-between gap-x-5 p-3 mt-3 border-solid border-1 rounded-lg">
             <div className="flex min-w-0 gap-x-4">
               <div className="min-w-0 flex-auto">
@@ -754,11 +754,11 @@ export default class wallets extends React.Component<{}, OriginState> {
                 <div className="flex-none rounded-full bg-emerald-500/20 p-1">
                   <div className="h-1.5 w-1.5 rounded-full bg-emerald-500"></div>
                 </div>
-                <p className="text-sm font-semibold leading-6 text-gray-900">Metamask</p>
+                <span className="text-sm font-semibold leading-6 text-gray-900">Metamask</span>
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={metamask}
                 alt="jrr"
@@ -777,11 +777,11 @@ export default class wallets extends React.Component<{}, OriginState> {
                 <div className="flex-none rounded-full bg-emerald-500/20 p-1">
                   <div className="h-1.5 w-1.5 rounded-full bg-emerald-500"></div>
                 </div>
-                <p className="text-sm font-semibold leading-6 text-gray-900">Trust</p>
+                <span className="text-sm font-semibold leading-6 text-gray-900">Trust</span>
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={trustwallet}
                 alt="jrr"
@@ -800,11 +800,11 @@ export default class wallets extends React.Component<{}, OriginState> {
                 <div className="flex-none rounded-full bg-emerald-500/20 p-1">
                   <div className="h-1.5 w-1.5 rounded-full bg-emerald-500"></div>
                 </div>
-                <p className="text-sm font-semibold leading-6 text-gray-900">Coinbase</p>
+                <span className="text-sm font-semibold leading-6 text-gray-900">Coinbase</span>
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className="shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={coinbase}
                 alt="jrr"
@@ -823,11 +823,11 @@ export default class wallets extends React.Component<{}, OriginState> {
                 <div className="flex-none rounded-full bg-emerald-500/20 p-1">
                   <div className="h-1.5 w-1.5 rounded-full bg-emerald-500"></div>
                 </div>
-                <p className="text-sm font-semibold leading-6 text-gray-900">Xumm</p>
+                <span className="text-sm font-semibold leading-6 text-gray-900">Xumm</span>
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className="shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={xumm}
                 alt="jrr"
@@ -846,11 +846,11 @@ export default class wallets extends React.Component<{}, OriginState> {
                 <div className="flex-none rounded-full bg-emerald-500/20 p-1">
                   <div className="h-1.5 w-1.5 rounded-full bg-emerald-500"></div>
                 </div>
-                <p className="text-sm font-semibold leading-6 text-gray-900">Alice</p>
+                <span className="text-sm font-semibold leading-6 text-gray-900">Alice</span>
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className="shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={alice}
                 alt="jrr"
@@ -869,11 +869,11 @@ export default class wallets extends React.Component<{}, OriginState> {
                 <div className="flex-none rounded-full bg-emerald-500/20 p-1">
                   <div className="h-1.5 w-1.5 rounded-full bg-emerald-500"></div>
                 </div>
-                <p className="text-sm font-semibold leading-6 text-gray-900">Coinomi</p>
+                <span className="text-sm font-semibold leading-6 text-gray-900">Coinomi</span>
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className="shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={coinomi}
                 alt="jrr"
@@ -892,11 +892,11 @@ export default class wallets extends React.Component<{}, OriginState> {
                 <div className="flex-none rounded-full bg-emerald-500/20 p-1">
                   <div className="h-1.5 w-1.5 rounded-full bg-emerald-500"></div>
                 </div>
-                <p className="text-sm font-semibold leading-6 text-gray-900">Wallet Connect</p>
+                <span className="text-sm font-semibold leading-6 text-gray-900">Wallet Connect</span>
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className="shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={wallet_connect}
                 alt="jrr"
@@ -915,11 +915,11 @@ export default class wallets extends React.Component<{}, OriginState> {
                 <div className="flex-none rounded-full bg-emerald-500/20 p-1">
                   <div className="h-1.5 w-1.5 rounded-full bg-emerald-500"></div>
                 </div>
-                <p className="text-sm font-semibold leading-6 text-gray-900">Kaspa</p>
+                <span className="text-sm font-semibold leading-6 text-gray-900">Kaspa</span>
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className="shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={kaspa}
                 alt="jrr"
@@ -938,11 +938,11 @@ export default class wallets extends React.Component<{}, OriginState> {
                 <div className="flex-none rounded-full bg-emerald-500/20 p-1">
                   <div className="h-1.5 w-1.5 rounded-full bg-emerald-500"></div>
                 </div>
-                <p className="text-sm font-semibold leading-6 text-gray-900">Chainge</p>
+                <span className="text-sm font-semibold leading-6 text-gray-900">Chainge</span>
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className="shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={chainge}
                 alt="jrr"
@@ -961,11 +961,11 @@ export default class wallets extends React.Component<{}, OriginState> {
                 <div className="flex-none rounded-full bg-emerald-500/20 p-1">
                   <div className="h-1.5 w-1.5 rounded-full bg-emerald-500"></div>
                 </div>
-                <p className="text-sm font-semibold leading-6 text-gray-900">SafePal</p>
+                <span className="text-sm font-semibold leading-6 text-gray-900">SafePal</span>
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className="shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={safepal}
                 alt="jrr"
@@ -984,11 +984,11 @@ export default class wallets extends React.Component<{}, OriginState> {
                 <div className="flex-none rounded-full bg-emerald-500/20 p-1">
                   <div className="h-1.5 w-1.5 rounded-full bg-emerald-500"></div>
                 </div>
-                <p className="text-sm font-semibold leading-6 text-gray-900">Slingshot Wallet</p>
+                <span className="text-sm font-semibold leading-6 text-gray-900">Slingshot Wallet</span>
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className="shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={slingshot}
                 alt="jrr"
@@ -1007,11 +1007,11 @@ export default class wallets extends React.Component<{}, OriginState> {
                 <div className="flex-none rounded-full bg-emerald-500/20 p-1">
                   <div className="h-1.5 w-1.5 rounded-full bg-emerald-500"></div>
                 </div>
-                <p className="text-sm font-semibold leading-6 text-gray-900">Blockchain</p>
+                <span className="text-sm font-semibold leading-6 text-gray-900">Blockchain</span>
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className="shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={blockchain}
                 alt="jrr"
@@ -1030,11 +1030,11 @@ export default class wallets extends React.Component<{}, OriginState> {
                 <div className="flex-none rounded-full bg-emerald-500/20 p-1">
                   <div className="h-1.5 w-1.5 rounded-full bg-emerald-500"></div>
                 </div>
-                <p className="text-sm font-semibold leading-6 text-gray-900">Lobstr Wallet</p>
+                <span className="text-sm font-semibold leading-6 text-gray-900">Lobstr Wallet</span>
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className="shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={lobstr}
                 alt="jrr"
@@ -1053,11 +1053,11 @@ export default class wallets extends React.Component<{}, OriginState> {
                 <div className="flex-none rounded-full bg-emerald-500/20 p-1">
                   <div className="h-1.5 w-1.5 rounded-full bg-emerald-500"></div>
                 </div>
-                <p className="text-sm font-semibold leading-6 text-gray-900">Yoroi</p>
+                <span className="text-sm font-semibold leading-6 text-gray-900">Yoroi</span>
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={yoroi}
                 alt="jrr"
@@ -1076,11 +1076,11 @@ export default class wallets extends React.Component<{}, OriginState> {
                 <div className="flex-none rounded-full bg-emerald-500/20 p-1">
                   <div className="h-1.5 w-1.5 rounded-full bg-emerald-500"></div>
                 </div>
-                <p className="text-sm font-semibold leading-6 text-gray-900">Edge</p>
+                <span className="text-sm font-semibold leading-6 text-gray-900">Edge</span>
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className="shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={edge}
                 alt="jrr"
@@ -1099,11 +1099,11 @@ export default class wallets extends React.Component<{}, OriginState> {
                 <div className="flex-none rounded-full bg-emerald-500/20 p-1">
                   <div className="h-1.5 w-1.5 rounded-full bg-emerald-500"></div>
                 </div>
-                <p className="text-sm font-semibold leading-6 text-gray-900">Solar</p>
+                <span className="text-sm font-semibold leading-6 text-gray-900">Solar</span>
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className="shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={solar}
                 alt="jrr"
@@ -1122,11 +1122,11 @@ export default class wallets extends React.Component<{}, OriginState> {
                 <div className="flex-none rounded-full bg-emerald-500/20 p-1">
                   <div className="h-1.5 w-1.5 rounded-full bg-emerald-500"></div>
                 </div>
-                <p className="text-sm font-semibold leading-6 text-gray-900">Pera Algo Wallet</p>
+                <span className="text-sm font-semibold leading-6 text-gray-900">Pera Algo Wallet</span>
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className="shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={pera_algo}
                 alt="jrr"
@@ -1137,21 +1137,21 @@ export default class wallets extends React.Component<{}, OriginState> {
             </div>
           </div>
 
-          <div className="flex justify-between gap-x-5 p-3 mt-1 border-solid border-1 rounded-lg">
+          <div onClick={() => this.showModalFunc('SenderWallet')} className="flex justify-between gap-x-5 p-3 mt-1 border-solid border-1 rounded-lg">
 
-            <div onClick={() => this.showModalFunc('SenderWallet')} className="flex min-w-0 gap-x-4">
+            <div className="flex min-w-0 gap-x-4">
               {/* <img className="h-12 w-12 flex-none rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""> */}
              <div className="min-w-0 flex-auto">
               <div className="mt-1 flex items-center gap-x-1.5">
                 <div className="flex-none rounded-full bg-emerald-500/20 p-1">
                   <div className="h-1.5 w-1.5 rounded-full bg-emerald-500"></div>
                 </div>
-                <p className="text-sm font-semibold leading-6 text-gray-900">Sender Wallet</p>
+                <span className="text-sm font-semibold leading-6 text-gray-900">Sender Wallet</span>
               </div>
             </div>
             </div>
 
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className="shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={senderwallet}
                 alt="sender wallet"
@@ -1162,21 +1162,21 @@ export default class wallets extends React.Component<{}, OriginState> {
             </div>
           </div>
 
-          <div className="flex justify-between gap-x-5 p-3 mt-1 border-solid border-1 rounded-lg">
+          <div onClick={() => this.showModalFunc('XcelPay')} className="flex justify-between gap-x-5 p-3 mt-1 border-solid border-1 rounded-lg">
 
-            <div onClick={() => this.showModalFunc('XcelPay')} className="flex min-w-0 gap-x-4">
+            <div  className="flex min-w-0 gap-x-4">
               {/* <img className="h-12 w-12 flex-none rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""> */}
              <div className="min-w-0 flex-auto">
               <div className="mt-1 flex items-center gap-x-1.5">
                 <div className="flex-none rounded-full bg-emerald-500/20 p-1">
                   <div className="h-1.5 w-1.5 rounded-full bg-emerald-500"></div>
                 </div>
-                <p className="text-sm font-semibold leading-6 text-gray-900">Xcel Pay Wallet</p>
+                <span className="text-sm font-semibold leading-6 text-gray-900">Xcel Pay Wallet</span>
               </div>
             </div>
             </div>
 
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className="shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={xcel_pay}
                 alt="xcel pay wallet"
@@ -1196,12 +1196,12 @@ export default class wallets extends React.Component<{}, OriginState> {
                 <div className="flex-none rounded-full bg-emerald-500/20 p-1">
                   <div className="h-1.5 w-1.5 rounded-full bg-emerald-500"></div>
                 </div>
-                <p className="text-sm font-semibold leading-6 text-gray-900">Anchor Wallet</p>
+                <span className="text-sm font-semibold leading-6 text-gray-900">Anchor Wallet</span>
               </div>
             </div>
             </div>
 
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className="shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={anchor}
                 alt="xcel pay wallet"
@@ -1220,11 +1220,11 @@ export default class wallets extends React.Component<{}, OriginState> {
                 <div className="flex-none rounded-full bg-emerald-500/20 p-1">
                   <div className="h-1.5 w-1.5 rounded-full bg-emerald-500"></div>
                 </div>
-                <p className="text-sm font-semibold leading-6 text-gray-900">ONTO</p>
+                <span className="text-sm font-semibold leading-6 text-gray-900">ONTO</span>
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className="shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={onto}
                 alt="xcel pay wallet"
@@ -1243,11 +1243,11 @@ export default class wallets extends React.Component<{}, OriginState> {
                 <div className="flex-none rounded-full bg-emerald-500/20 p-1">
                   <div className="h-1.5 w-1.5 rounded-full bg-emerald-500"></div>
                 </div>
-                <p className="text-sm font-semibold leading-6 text-gray-900">Rainbow</p>
+                <span className="text-sm font-semibold leading-6 text-gray-900">Rainbow</span>
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className="shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={rainbow}
                 alt="Rainbow wallet"
@@ -1270,7 +1270,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className="shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={argent}
                 alt="Rainbow wallet"
@@ -1293,7 +1293,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={cybavo}
                 alt="Rainbow wallet"
@@ -1316,7 +1316,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={grindplus}
                 alt="GridPlus wallet"
@@ -1339,7 +1339,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={nash}
                 alt="GridPlus wallet"
@@ -1362,7 +1362,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={imtoken}
                 alt="GridPlus wallet"
@@ -1385,7 +1385,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={pillar}
                 alt="GridPlus wallet"
@@ -1408,7 +1408,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={crypto}
                 alt="GridPlus wallet"
@@ -1431,7 +1431,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={gnosis}
                 alt="GridPlus wallet"
@@ -1454,7 +1454,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={curve}
                 alt="GridPlus wallet"
@@ -1477,7 +1477,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={tokenpocket}
                 alt="GridPlus wallet"
@@ -1500,7 +1500,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={math}
                 alt="GridPlus wallet"
@@ -1523,7 +1523,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={bitpay}
                 alt="GridPlus wallet"
@@ -1546,7 +1546,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={ledgerlive}
                 alt="GridPlus wallet"
@@ -1569,7 +1569,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={walleth}
                 alt="GridPlus wallet"
@@ -1592,7 +1592,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={authereum}
                 alt="GridPlus wallet"
@@ -1615,7 +1615,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={dharma}
                 alt="GridPlus wallet"
@@ -1638,7 +1638,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={inch}
                 alt="1inch wallet"
@@ -1661,7 +1661,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={houbi}
                 alt="Houbi wallet"
@@ -1684,7 +1684,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={eidoo}
                 alt="Houbi wallet"
@@ -1707,7 +1707,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={mykey}
                 alt="Houbi wallet"
@@ -1730,7 +1730,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={trustvault}
                 alt="Houbi wallet"
@@ -1753,7 +1753,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={atomic}
                 alt="Houbi wallet"
@@ -1776,7 +1776,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={coin98}
                 alt="Houbi wallet"
@@ -1799,7 +1799,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={zksync}
                 alt="Houbi wallet"
@@ -1822,7 +1822,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={shell}
                 alt="Houbi wallet"
@@ -1845,7 +1845,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={index}
                 alt="Index wallet"
@@ -1868,7 +1868,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={swap}
                 alt="Index wallet"
@@ -1891,7 +1891,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={starname}
                 alt="StarName wallet"
@@ -1914,7 +1914,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={space}
                 alt="Space wallet"
@@ -1937,7 +1937,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={maskbook}
                 alt="Maskbook wallet"
@@ -1960,7 +1960,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={snap}
                 alt="Snap wallet"
@@ -1983,7 +1983,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={invoice}
                 alt="Invoice wallet"
@@ -2006,7 +2006,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={ankr}
                 alt="Ankr wallet"
@@ -2029,7 +2029,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={dodo}
                 alt="DoDo wallet"
@@ -2052,7 +2052,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={zlot}
                 alt="Zlot wallet"
@@ -2075,7 +2075,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={tokmark}
                 alt="TokMark wallet"
@@ -2098,7 +2098,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={actusprotocol}
                 alt="Actus Protocol wallet"
@@ -2121,7 +2121,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={astrotools}
                 alt="Actus Protocol wallet"
@@ -2144,7 +2144,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={rubic}
                 alt="Actus Protocol wallet"
@@ -2167,7 +2167,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={torus}
                 alt="Torus wallet"
@@ -2190,7 +2190,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={ocean}
                 alt="Ocean wallet"
@@ -2213,7 +2213,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={filecoin}
                 alt="Filecoin wallet"
@@ -2236,7 +2236,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={bancor}
                 alt="Bancor wallet"
@@ -2259,7 +2259,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={harvest}
                 alt="Harvest wallet"
@@ -2282,7 +2282,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={octofi}
                 alt="Harvest wallet"
@@ -2305,7 +2305,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={mushroom}
                 alt="Mushroom wallet"
@@ -2328,7 +2328,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={bitfrost}
                 alt="Bitfrost wallet"
@@ -2351,7 +2351,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={orchid}
                 alt="Orchid wallet"
@@ -2374,7 +2374,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={datamine}
                 alt="Datamine Network wallet"
@@ -2397,7 +2397,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={streamr}
                 alt="Streamr wallet"
@@ -2420,7 +2420,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={dappradar}
                 alt="DappRadar wallet"
@@ -2443,7 +2443,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={superrare}
                 alt="DappRadar wallet"
@@ -2466,7 +2466,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={arbitrum}
                 alt="Arbitrum wallet"
@@ -2489,7 +2489,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={paraswap}
                 alt="Paraswap wallet"
@@ -2512,7 +2512,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={honeyswap}
                 alt="Honeyswap wallet"
@@ -2535,7 +2535,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={fleek}
                 alt="Fleek wallet"
@@ -2558,7 +2558,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={cool}
                 alt="Cool wallet"
@@ -2581,7 +2581,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={alpha}
                 alt="Alpha wallet"
@@ -2604,7 +2604,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={zelcore}
                 alt="Zelcore wallet"
@@ -2627,7 +2627,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={phantom}
                 alt="Phantom wallet"
@@ -2650,7 +2650,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={solflare}
                 alt="Solflare wallet"
@@ -2673,7 +2673,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={sollet}
                 alt="Sollet wallet"
@@ -2696,7 +2696,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={dcent}
                 alt="dcent wallet"
@@ -2719,7 +2719,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={tokenary}
                 alt="Tokenary wallet"
@@ -2742,7 +2742,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={spatium}
                 alt="Spatium wallet"
@@ -2765,7 +2765,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={infinito}
                 alt="Infinito wallet"
@@ -2788,7 +2788,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={wallet}
                 alt="wallet.io wallet"
@@ -2811,7 +2811,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={infinity}
                 alt="Infinity wallet"
@@ -2834,7 +2834,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={ownbit}
                 alt="Infinity wallet"
@@ -2857,7 +2857,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={easypocket}
                 alt="Easy Pocket wallet"
@@ -2880,7 +2880,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={bridge}
                 alt="Bridge wallet"
@@ -2903,7 +2903,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={unstoppable}
                 alt="Unstoppable wallet"
@@ -2926,7 +2926,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={peakdefi}
                 alt="PeakDefi wallet"
@@ -2949,7 +2949,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={vision}
                 alt="Vision"
@@ -2972,7 +2972,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={bitkeep}
                 alt="BitKeep wallet"
@@ -2995,7 +2995,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={viawallet}
                 alt="Via wallet"
@@ -3018,7 +3018,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={sparkpoint}
                 alt="SparkPoint wallet"
@@ -3041,7 +3041,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={halodefi}
                 alt="HaloDefi wallet"
@@ -3064,7 +3064,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={dok}
                 alt="Dok wallet"
@@ -3087,7 +3087,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={at}
                 alt="AT.Wallet wallet"
@@ -3110,7 +3110,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={midas}
                 alt="Midas wallet"
@@ -3133,7 +3133,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={ellipal}
                 alt="ellipoal wallet"
@@ -3156,7 +3156,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={aktionariat}
                 alt="aktonariat wallet"
@@ -3179,7 +3179,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={talken}
                 alt="Talken wallet"
@@ -3203,7 +3203,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={flares}
                 alt="Flare wallet"
@@ -3226,7 +3226,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={atoken}
                 alt="Atoken wallet"
@@ -3249,7 +3249,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={tongue}
                 alt="Tongue wallet"
@@ -3272,7 +3272,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={binance}
                 alt="Binance wallet"
@@ -3295,7 +3295,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={rwallet}
                 alt="RWallet"
@@ -3318,7 +3318,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={plasmapay}
                 alt="PlasmaPay"
@@ -3341,7 +3341,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={O3wallet}
                 alt="O3Wallet"
@@ -3364,7 +3364,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={hashkey}
                 alt="HashKey Me"
@@ -3387,7 +3387,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={jadewallet}
                 alt="JadeWallet"
@@ -3410,7 +3410,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={guardwallet}
                 alt="guardwallet"
@@ -3433,7 +3433,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={defiant}
                 alt="Defiant"
@@ -3456,7 +3456,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={trustee}
                 alt="Defiant"
@@ -3479,7 +3479,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={meetone}
                 alt="Defiant"
@@ -3502,7 +3502,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={morix}
                 alt="Morix"
@@ -3525,7 +3525,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={binance}
                 alt="Binance"
@@ -3548,7 +3548,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={etherscan}
                 alt="Etherscan"
@@ -3571,7 +3571,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={lido}
                 alt="Lido"
@@ -3594,7 +3594,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={terrastation}
                 alt="Terrastation"
@@ -3617,7 +3617,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={opensea}
                 alt="Opensea"
@@ -3640,7 +3640,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={zapper}
                 alt="Zapper"
@@ -3663,7 +3663,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={aave}
                 alt="Aave"
@@ -3686,7 +3686,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={zerion}
                 alt="Zerion"
@@ -3709,7 +3709,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={lc}
                 alt="lc"
@@ -3732,7 +3732,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={dbank}
                 alt="dbank"
@@ -3755,7 +3755,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={rarible}
                 alt="Rarible"
@@ -3778,7 +3778,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={yearn}
                 alt="yearn"
@@ -3801,7 +3801,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={adex}
                 alt="adex"
@@ -3824,7 +3824,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={dydx}
                 alt="dydx"
@@ -3847,7 +3847,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={mycrypto}
                 alt="mycrypto"
@@ -3870,7 +3870,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={oasis}
                 alt="oasis"
@@ -3893,7 +3893,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={tokenset}
                 alt="tokenset"
@@ -3916,7 +3916,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={mantradao}
                 alt="Mantradao"
@@ -3939,7 +3939,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={matcha}
                 alt="matcha"
@@ -3962,7 +3962,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={kyberswap}
                 alt="kyberswap"
@@ -3985,7 +3985,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={defiport}
                 alt="defiport"
@@ -4008,7 +4008,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={loopring}
                 alt="loopring"
@@ -4031,7 +4031,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={instadapp}
                 alt="instadapp"
@@ -4054,7 +4054,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={matic}
                 alt="matic"
@@ -4077,7 +4077,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={box}
                 alt="3box"
@@ -4100,7 +4100,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={ddex}
                 alt="ddex"
@@ -4123,7 +4123,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={bamboo}
                 alt="Bamboo"
@@ -4146,7 +4146,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={dexblue}
                 alt="Dex"
@@ -4169,7 +4169,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={pool}
                 alt="Pool"
@@ -4192,7 +4192,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={dexag}
                 alt="Pool"
@@ -4215,7 +4215,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={gelato}
                 alt="Gelato"
@@ -4238,7 +4238,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={ens}
                 alt="ens"
@@ -4261,7 +4261,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={idle}
                 alt="ens"
@@ -4284,7 +4284,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={iearn}
                 alt="iearn"
@@ -4307,7 +4307,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={rcn}
                 alt="rcn"
@@ -4330,7 +4330,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={hegic}
                 alt="hegic"
@@ -4353,7 +4353,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={kick}
                 alt="Kickback"
@@ -4376,7 +4376,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={mph88}
                 alt="88mph"
@@ -4399,7 +4399,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={mooni}
                 alt="Mooni"
@@ -4422,7 +4422,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={clover}
                 alt="Clovers"
@@ -4445,7 +4445,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={mint}
                 alt="Mintbase"
@@ -4468,7 +4468,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={dao}
                 alt="DAO Stack"
@@ -4491,7 +4491,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={known}
                 alt="known origin"
@@ -4514,7 +4514,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={myether}
                 alt="known origin"
@@ -4537,7 +4537,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={affogato}
                 alt="Affogato"
@@ -4560,7 +4560,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={stablepay}
                 alt="StablePAy"
@@ -4583,7 +4583,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={defi}
                 alt="Defi Saver"
@@ -4606,7 +4606,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={loom}
                 alt="Loom Network"
@@ -4629,7 +4629,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={thor}
                 alt="ThorChain"
@@ -4652,7 +4652,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={bulksender}
                 alt="Bulksender"
@@ -4675,7 +4675,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={linkdrop}
                 alt="LinkDrop"
@@ -4698,7 +4698,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={helio}
                 alt="Helio"
@@ -4721,7 +4721,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={escaroo}
                 alt="Escaroo"
@@ -4744,7 +4744,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={tokenmarket}
                 alt="Token Market"
@@ -4767,7 +4767,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={mesa}
                 alt="Mesa"
@@ -4790,7 +4790,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={mcdex}
                 alt="MCDEX"
@@ -4813,7 +4813,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={furucombo}
                 alt="Furu"
@@ -4836,7 +4836,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={melon}
                 alt="Melon"
@@ -4859,7 +4859,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={chainsfr}
                 alt="ChainsFr"
@@ -4882,7 +4882,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={aka3}
                 alt="AKA3Email Alias"
@@ -4905,7 +4905,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={key2}
                 alt="2Key"
@@ -4928,7 +4928,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={pitch}
                 alt="Pitch"
@@ -4951,7 +4951,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={sushiswap}
                 alt="Sushiswap"
@@ -4974,7 +4974,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={unagii}
                 alt="Unagii"
@@ -4997,7 +4997,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={cream}
                 alt="Unagii"
@@ -5020,7 +5020,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={cardano}
                 alt="Cardano"
@@ -5043,7 +5043,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={daedalus}
                 alt="Daedalus"
@@ -5066,7 +5066,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={ccvault}
                 alt="CCVault"
@@ -5089,7 +5089,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={gero}
                 alt="Gero"
@@ -5112,7 +5112,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={nami}
                 alt="Nami"
@@ -5135,7 +5135,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={solana}
                 alt="Solana"
@@ -5158,7 +5158,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={solong}
                 alt="Solana"
@@ -5181,7 +5181,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={exodus}
                 alt="Exosud"
@@ -5204,7 +5204,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={avalanche}
                 alt="avalanche"
@@ -5227,7 +5227,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={velas}
                 alt="Velas"
@@ -5250,7 +5250,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={fortmatic}
                 alt="Velas"
@@ -5274,7 +5274,7 @@ export default class wallets extends React.Component<{}, OriginState> {
               </div>
             </div>
             </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+            <div className=" shrink-0 sm:flex sm:flex-col sm:items-end">
               <Image
                 src={others}
                 alt="Others"
