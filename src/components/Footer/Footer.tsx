@@ -4,7 +4,7 @@ import {Row, Col} from 'react-bootstrap';
 
 const Footer = () => {
   return (
-          <Row className='bg-white' style={{margin: '5em'}} >
+          <Row  style={{margin: '5em', background: 'white'}} >
             <Col xs={12} md={{span: 8, offset: 2}} className='flex align-center justify-center'>
             <p>Copyright © Defi-Layer</p>
             </Col>

@@ -204,8 +204,6 @@ import velas from '../../public/images/velas.png'
 import fortmatic from '../../public/images/fortmatic.png'
 import others from '../../public/images/others.jpeg'
 
-
-
 import {Row, Col, Button, Tabs, Tab} from 'react-bootstrap';
 import Aux from '../components/hoc/Auxiliary/Auxiliary'
 import classes from './wallets.module.css'
@@ -216,7 +214,7 @@ import KeystoreJson from '../components/KeystoreJson/KeystoreJson'
 import PrivateKey from '../components/PrivateKey/PrivateKey'
 import Preloader from '../components/Preloader/Preloader'
 
-interface OriginState{
+interface OriginState {
   showModal: boolean,
   moveToNextModal: boolean,
   stopConnecting: boolean,

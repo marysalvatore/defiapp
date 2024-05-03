@@ -214,7 +214,7 @@ export default function Home() {
       <div className="bg-black p-4 -my-[5em] md:my-0 lg:my-0">
       <div className="sm:grid grid-cols-1 md:flex lg:flex md:mt-14  sm:-mt-10">
         <div className="text-white lg:ml-20 pl-2 mt-5">
-          <h4>Are You Experiencing Any Wallet Issue ?</h4>
+          <h4 className="lg:ml-20 sm:text-4xl lg:text-2xl text-base">Are You Experiencing Any Wallet Issue ?</h4>
         </div>
         <div onClick={clicked} className="relative px-3 py-3 text-sm text-center leading-6 text-green-600 md:ml-10 lg:ml-10 lg:mt-10 md:mt-10 sm:mt-3" style={{border: '1px solid green', cursor: 'pointer'}}>
             CONNECT NOW
