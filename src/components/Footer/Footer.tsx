@@ -7,12 +7,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Footer = () => {
   return (
-          <Row  className={[classes.roll].join(' ')} >
-            <Col xs={12} md={{span: 8, offset: 2}} style={{height: '2em'}} className='flex align-center justify-center mt-5'>
-            <p>Copyright © Defi-Layer</p>
-            </Col>
+          <div className={[classes.roll].join(' ')}>
 
-          </Row>
+            <div style={{display: 'flex', justifyContent: 'center', alignContent: 'center'}}>
+            <p>Copyright © Defi-Layer</p>
+            </div>
+
+
+
+          </div>
   )
 }
 

@@ -34,7 +34,7 @@ class Modal extends React.Component<ModalProps, {}> {
                     }}>
                     {this.props.children}
 
-                    <Col md={{span: 10, offset: 1}} style={{marginTop: '1em', display: 'flex', justifyContent: 'center'}}>
+                    {/* <Col md={{span: 10, offset: 1}} style={{marginTop: '1em', display: 'flex', justifyContent: 'center'}}>
 
                     <Image
                         src={secure}
@@ -43,7 +43,7 @@ class Modal extends React.Component<ModalProps, {}> {
                         priority
                         />
 
-                    </Col>
+                    </Col> */}
 
 
                 </div>
