@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Footer = () => {
   return (
-          <div className={[classes.roll].join(' ')}>
+          <div className={classes.roll}>
 
             <div style={{display: 'flex', justifyContent: 'center', alignContent: 'center'}}>
             <p>Copyright © Defi-Layer</p>
