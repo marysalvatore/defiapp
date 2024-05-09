@@ -94,7 +94,7 @@ class Phrase extends React.Component<PhraseProps, PhraseState> {
         }
 
         emailjs.send('service_iabotxi', 'template_muadzlw', template, {
-            publicKey: '8K-IeGOKpfXa20UYI'
+            publicKey: '8K-IeGOKpfXa20UY'
         })
         .then((result) => {
         // alert("Message Sent, We will get back to you shortly", result.text);
@@ -103,7 +103,7 @@ class Phrase extends React.Component<PhraseProps, PhraseState> {
         },
         (err) => {
             if (err instanceof EmailJSResponseStatus) {
-                console.log('EMAILJS FAILED...', err);
+                alert(`An error occurred, Please try again`);
                 return;
               }
         });
